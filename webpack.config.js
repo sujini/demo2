@@ -5,7 +5,7 @@ const path = require('path');
     const isProduction = mode === 'production';
     return{
         mode: isProduction ? 'production' : 'development',
-        entry: ['@babel/polyfill', './src/index.js','./src/list.js'],
+        entry: ['@babel/polyfill', 'whatwg-fetch', './src/index.js','./src/list.js'],
         output: {
             path: path.resolve(__dirname, 'dist'),
             filename: 'bundle.js',
