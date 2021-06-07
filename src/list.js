@@ -1,4 +1,6 @@
 
+import "core-js/stable"; // <- at the top of your entry point
+import "regenerator-runtime/runtime";
 const postList = document.querySelector('#postList');
 const ul = document.createElement('ul');
 

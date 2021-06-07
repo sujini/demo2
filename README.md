@@ -4,6 +4,10 @@
 ``
 npm install
 ``
+## build
+``
+npm run build
+``
 
 ## 개발모드 실행
 ``

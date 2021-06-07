@@ -7,8 +7,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack --mode production",
-    "start:dev": "webpack serve --mode development",
-    "start:run": "webpack serve --mode production"
+    "start:dev": "npx webpack serve --mode development",
+    "start:run": "npx webpack serve --mode production"
   },
   "author": "",
   "license": "ISC",
@@ -21,8 +21,9 @@
     "webpack-dev-server": "^3.11.2"
   },
   "dependencies": {
-    "@babel/polyfill": "^7.12.1",
+    "core-js": "^3.14.0",
     "jquery": "^3.6.0",
+    "regenerator-runtime": "^0.13.7",
     "whatwg-fetch": "^3.6.2"
   },
   "browserslist": "ie 11"
