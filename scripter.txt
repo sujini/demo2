@@ -1,0 +1,38 @@
+NPM, 함수형프로그래밍
+(SPA(REACT)개발을 위한 사전지식)
+
+
+
+npm init 입력 시 프로젝트의 이름과 버전, 설명, 프로젝트의 시작 파일 등 프로젝트 설정에 관련된 데이터를 입력하게 되는데 
+이와 같은 과정이 불필요한 분들은 
+npm init -y 명령어로 간단하게 package.json을 생성하실 수 있습니다.
+
+
+- webpack modules > rules > use
+https://webpack.js.org/configuration/module/#ruleuse
+- module function: https://webpack.js.org/configuration/configuration-types/
+- target: 'web'이라 명시해줘야 devserver liveroad가능 ,but 하위브라우저 호환되려면 ['web','es5'],
+  //webpack v5부터 transfile을 기본적으로 es6한다.그래서 target을 명시해줘야함
+- webpack devServer:
+https://webpack.js.org/configuration/dev-server/
+
+
+
+
+입출력이 순수하다는 것은 반드시 하나 이상의 인자를 받고, 받은 인자를 처리하여 반드시 결과물을 돌려주어야한다는 겁니다.
+인자를 제외한 다른 변수는 사용하면 안 됩니다. 받은 인자만으로 결과물을 내어야 하죠.
+
+부작용이 없어야한다는 것은, 프로그래머가 바꾸고자하는 변수 외에는 바뀌어서는 안 된다는 뜻입니다. 
+원본 데이터는 불변, 
+* 부수 효과 (부작용)= 외부의 상태를 변경하는 것 또는 함수로 들어온 인자의 상태를 직접 변경하는 것
+* 순수 함수 = 부수효과가 없는 함수 즉, 어떤 함수에 동일한 인자를 주었을 때 항상 같은 값을 리턴하는 함수
+  + 외부의 상태를 변경하지 않는 함수
+
+- 1급객체:
+변수나 데이타에 할당 할 수 있어야 한다.
+객체의 인자로 넘길 수 있어야 한다.
+객체의 리턴값으로 리턴 할수 있어야 한다.
+
+
+- map함수 폴리필:
+https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Array/map#polyfill
